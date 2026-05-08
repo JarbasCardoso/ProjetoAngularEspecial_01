@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h2>Carrinhos</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let carrinho of carrinhos">
+      <div class="card h-100">
+        <div class="card-body">
+          <h6 class="card-title">Carrinho #{{ carrinho.id }}</h6>
+          <p>Usuário: {{ carrinho.userId }}</p>
+          <p>Data: {{ carrinho.date }}</p>
+          <p>Itens: {{ carrinho.products.length }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

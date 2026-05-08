@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <h2>Usuários</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3" *ngFor="let usuario of usuarios">
+      <div class="card h-100">
+        <div class="card-body">
+          <h6 class="card-title">{{ usuario.username }}</h6>
+          <p>Email: {{ usuario.email }}</p>
+          <p>Telefone: {{ usuario.phone }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
